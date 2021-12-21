@@ -95,7 +95,7 @@ a.active,a:hover{
     }
 }
 section{
-    background: url(p.png) no-repeat;
+    background: url(images/p.png) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
 }
