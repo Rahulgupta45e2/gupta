@@ -124,6 +124,10 @@ label #cancel{
     color: black;
     font-size: 29px;
     margin: 15px 30px;
+    position: absolute;
+    top: 0;
+    left: 240px;
+
 }
 
 body{
