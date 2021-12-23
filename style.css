@@ -109,3 +109,28 @@ a:hover{
     visibility: visible;
 }
 }
+
+label #btn{
+    margin-left: 50px;
+    margin-top: 50px;
+    color: black;
+    font-size: 29px;
+    margin: 15px 30px;
+
+}
+label #cancel{
+    margin-left: 50px;
+    margin-top: 50px;
+    color: black;
+    font-size: 29px;
+    margin: 15px 30px;
+}
+
+body{
+    min-height: 100vh;
+}
+label{
+  position: relative; 
+  top: 10px;
+  left: 10px; 
+}
