@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -400px;
+    width: 240px;
+    height: 100%;
+    background: rgb(190, 245, 108);
+}
+.sidebar header{
+    color: white;
+    font-size: 28px;
+    line-height: 70px;
+    text-align: center;
+    background: rgb(141, 113, 177);
+    font-family:'Times New Roman', Times, serif;
+    user-select: none;
+}
+.sidebar a{
+    display: block;
+    color: white;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 30px;
+    width: 100%;
+    border-bottom: 1px solid rgb(141, 113, 177);
+    border-top: 5px solid transparent red;
+    box-sizing: border-box;
+    font-family: 'open sans',sans-serif;
+}
+a:hover , a.active{
+    left: 5px solid  red;
+    color: rgb(128, 126, 51);
+}
+.sidebar a i{
+font-size: 23px;
+margin-right: 16px;
+}
+.sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#check{
+    display: none;
+}
+.label #btn, .label #cancel{
+    position: absolute;
+   cursor: pointer;
+   background: #262626;
+   height: 45px;
+   width: 45px;
+   text-align: center;
+   line-height: 45px;
+   color: white;
+   border-radius: 5px;
+   font-size: 29px;
+   border: 1px solid #262626;
+   margin: 15px 30px;
+   transition: all.5s ease;
+}
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+#check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility:hidden;
+}
+
+#check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility:visible;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+@media (max-width:860px){
+    .sidebar{
+        height: auto;
+        width: 70px;
+        left: 0;
+        margin: 100px 0;
+    }
+    header,#btn,#cancel{
+        display: none;
+    }
+    
+span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+}
+.sidebar a i{
+    margin-left: -10px;
+}
+a:hover{
+    width: 200px;
+    background: inherit;
+}
+.sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+}
